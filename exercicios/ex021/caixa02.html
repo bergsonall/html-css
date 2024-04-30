@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color: dimgray;
+        }
+
+        header{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        nav{
+            background-color: rgb(121, 121, 121);
+            padding: 3px;
+            box-shadow: 1px 1px 3px black;
+        }
+
+        nav > a{
+            text-decoration: none;
+            margin-right: 30px;
+            font-weight: bold;
+            color: white;
+        }
+
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        article > aside {
+            background-color: rgb(138, 136, 136);
+        }
+
+        footer{
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 4px;
+            margin: 10px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At reiciendis dolores placeat beatae quae laudantium expedita perferendis! Enim libero, soluta, molestiae porro a nostrum explicabo et non sunt vero odit.</p>
+                <aside>Artigo escrito por Bruno Dubal</aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Bruno Dubal</p>
+    </footer>
+</body>
+</html>
