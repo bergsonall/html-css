@@ -1,4 +1,4 @@
-/*reset*/
+/* reset */
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +11,8 @@ body {
   font-size: 17px;
 }
 
+
+/* config header/nav */
 header{
     height: 50px;
     background-color: rgb(60, 112, 255);
@@ -29,4 +31,38 @@ nav{
 i{
     font-size: large;
     color: white;
+}
+
+/* Display Grid */
+main{
+    display: grid;
+    grid-template: auto auto / 20px 1fr 20px;
+    width: 100%;
+}
+
+#apresentacao{
+    grid-area: 1 / 2 / 2 / 3;
+    text-align: center;
+}
+
+#apresentacao > h2{
+    text-align: left;
+}
+#apresentacao > p{
+    text-align: left;
+}
+
+#detalhes{
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+
+/* config header/nav */
+img{
+    max-width: 65%; 
+    height: auto;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    border: 5px solid rgb(60, 112, 255);
 }
