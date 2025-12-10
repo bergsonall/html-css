@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -11,6 +13,13 @@ body {
   font-size: 17px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+h2{
+    color: #3373FD;
+}
 
 /* config header/nav */
 header{
@@ -28,9 +37,18 @@ nav{
     padding-right: 20px;
 }
 
-i{
+header > nav > a{
     font-size: large;
     color: white;
+}
+
+.grow:hover{
+    animation: zoom-in 0.4s ease forwards;
+}
+
+@keyframes zoom-in {
+    0%   { transform: scale(1); }
+    100% { transform: scale(1.15); }
 }
 
 /* Display Grid */
@@ -51,18 +69,43 @@ main{
 #apresentacao > p{
     text-align: left;
 }
+#apresentacao > div{
+    margin: 10px 0;
+}
+#apresentacao > div > a{
+    font-size: 1.2em;
+    color: rgb(51, 115, 253);
+    padding: 10px;
+}
+.pulseshadow:hover {
+    animation: pulse-shadow 0.8s ease-in-out infinite;
+}
+.pulse:hover {
+    animation: pulse 0.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.07);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 #detalhes{
     grid-area: 2 / 2 / 3 / 3;
 }
 
-
-/* config header/nav */
 img{
-    max-width: 65%; 
+    max-width: 250px; 
     height: auto;
     border-radius: 50%;
-    padding: 5px;
     background-color: white;
-    border: 5px solid rgb(60, 112, 255);
+    padding: 5px;
+    border: 5px solid #3498db;
+    border-radius: 50%;
 }
