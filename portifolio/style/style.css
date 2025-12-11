@@ -24,7 +24,11 @@ h2{
 /* config header/nav */
 header{
     height: 50px;
+    width: 100%;
     background-color: rgb(60, 112, 255);
+    position: fixed;
+    top:0;
+    left: 0;
 }
 
 nav{
@@ -56,6 +60,7 @@ main{
     display: grid;
     grid-template: auto auto / 20px 1fr 20px;
     width: 100%;
+    margin-top: 50px;
 }
 
 
@@ -114,6 +119,10 @@ img{
     grid-area: 2 / 2 / 3 / 3;
 }
 
+.skills{
+    scroll-margin-top: 80px;
+}
+
 .skill{
     height: 70px;
     display: flex;
@@ -168,3 +177,47 @@ img{
     border-radius: 10px;
 }
 
+.percent{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: bold;
+}
+
+.percent-text{
+    color: rgb(0, 60, 255);
+} 
+
+article{
+    margin: 30px 0;
+}
+
+#graduation{
+    scroll-margin-top: 80px;
+}
+
+.course{
+    margin: 15px 0;
+    height: 100px;
+    padding: 10px 0;
+
+    border-radius: 20px;
+    border-left: 6px solid #3498db;
+    background-color: #e7e7e7;
+    transition: all 0.4s;
+}
+
+.course > p{
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+.course > h3{
+    padding-left: 20px;
+    color: #3498db;
+}
+
+.course:hover{
+    border-left: 16px solid rgb(0, 81, 255);
+}
