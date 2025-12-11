@@ -9,8 +9,16 @@
 }
 
 body {
-  font-family: "Lucida Sans", sans-serif;
-  font-size: 17px;
+    background-color: var(--bg, #fff);
+    color: var(--fg, #111);
+    font-family: "Lucida Sans", sans-serif;
+    font-size: 17px;
+}
+
+body.dark{
+    --bg: #121212;
+    --fg: #eeeeee;
+    --link: #809fff;
 }
 
 html {
@@ -46,6 +54,13 @@ header > nav > a{
     color: white;
 }
 
+header > nav > button{
+    font-size: large;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
 .grow:hover{
     animation: zoom-in 0.4s ease forwards;
 }
@@ -74,7 +89,7 @@ main{
     max-width: 250px; 
     height: auto;
     border-radius: 50%;
-    background-color: white;
+    background-color: transparent;
     padding: 5px;
     border: 5px solid #3498db;
     border-radius: 50%;
@@ -202,10 +217,16 @@ article{
     height: 100px;
     padding: 10px 0;
 
-    border-radius: 20px;
+    border-radius: 20px 0 20px 0;
+    border: 1px solid #3498db;
     border-left: 6px solid #3498db;
-    background-color: #e7e7e7;
+    background-color: transparent;
     transition: all 0.4s;
+}
+
+.course:hover{
+    border: 1px solid rgb(0, 81, 255);
+    border-left: 16px solid rgb(0, 81, 255);
 }
 
 .course > p{
@@ -218,10 +239,6 @@ article{
     color: #3498db;
 }
 
-.course:hover{
-    border-left: 16px solid rgb(0, 81, 255);
-}
-
 #project{
     scroll-margin-top: 60px;
 }
@@ -232,12 +249,14 @@ article{
     padding: 10px;
 
     border-radius: 20px;
+    border: 1px solid #3498db;
     border-left: 6px solid #3498db;
-    background-color: #e7e7e7;
+    background-color: transparent;
     transition: all 0.4s;
 }
 
 .img-project:hover{
+    border: 1px solid rgb(0, 81, 255);
     border-left: 18px solid rgb(0, 81, 255);
     border-radius: 20px;
 }
