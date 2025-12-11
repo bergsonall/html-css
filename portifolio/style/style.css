@@ -70,7 +70,7 @@ main{
     text-align: center;
 }
 
-img{
+.perfil{
     max-width: 250px; 
     height: auto;
     border-radius: 50%;
@@ -120,7 +120,7 @@ img{
 }
 
 .skills{
-    scroll-margin-top: 80px;
+    scroll-margin-top: 60px;
 }
 
 .skill{
@@ -194,7 +194,7 @@ article{
 }
 
 #graduation{
-    scroll-margin-top: 80px;
+    scroll-margin-top: 60px;
 }
 
 .course{
@@ -220,4 +220,48 @@ article{
 
 .course:hover{
     border-left: 16px solid rgb(0, 81, 255);
+}
+
+#project{
+    scroll-margin-top: 60px;
+}
+
+.img-project{
+    width: auto;
+    margin: 10px 0;
+    padding: 10px;
+
+    border-radius: 20px;
+    border-left: 6px solid #3498db;
+    background-color: #e7e7e7;
+    transition: all 0.4s;
+}
+
+.img-project:hover{
+    border-left: 18px solid rgb(0, 81, 255);
+    border-radius: 20px;
+}
+
+.img-project > img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.img-project > h3{
+    color: #3498db;
+}
+.img-project > p{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(60, 112, 255);
+    top:0;
+    left: 0;
+    text-align: center;
+    height: auto;
 }
