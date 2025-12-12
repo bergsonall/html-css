@@ -8,6 +8,11 @@
     font-family: "Poppins", sans-serif;
 }
 
+html, body{
+    height: 100vh;
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--bg, #fff);
     color: var(--fg, #111);
@@ -46,11 +51,12 @@ h2{
 /* config header/nav */
 header{
     height: 50px;
-    width: 100%;
+    width: 100vw;
     background-color: rgb(68, 118, 255);
     position: fixed;
     top:0;
     left: 0;
+    z-index: 100;
 }
 
 nav{
